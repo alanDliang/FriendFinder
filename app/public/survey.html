@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder Survey</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <img src="/images/friend-logo.jpg" class="logo" height="150px" alt="Friend Finder Logo">
+            <h1 class="text-center">Find a friend!</h1>
+            <hr>
+            <br>
+            <div class="text-center">
+                <a href="/api/myFriends">
+                    <button type="button" class="header-btn btn btn-lg btn-default">
+                        <span class="glyphicon glyphicon-list-alt"></span> View Friends</button>
+                </a>
+                <a href="/">
+                    <button type="button" class="header-btn btn btn-lg btn-default">
+                        <span class="glyphicon glyphicon-home"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <h1 class="text-center">Survey Questions</h1>
+        <form id="survey">
+            <h2>About You:</h2>
+
+            <!-- Form for name -->
+            <div class="form-group">
+                <label for="user">Name:</label>
+                <input type="text" class="form-control" id="name" required placeholder="John Smith">
+            </div>
+
+            <!-- Form for Photo URL -->
+            <div class="form-group">
+                <label for="photo">URL for Photo:</label>
+                <input type="text" class="form-control" id="photo" required placeholder="http://www.linktophotourl.com">
+                <br>
+            </div>
+            <hr>
+            <h3>Please rate the following statements, 5 is strongly agree, 1 is strongly disagree...</h3>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #1</h3>
+                <h4>Ian Fleming is the greatest spy novelist.</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q0">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #2</h3>
+                <h4>MI6 is the best spy agency in the world</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q1">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #3</h3>
+                <h4>CIA is the most secreative spy agency in the world</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q2">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #4</h3>
+                <h4>You like your Martini shaken and not stirred</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q3">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #5</h3>
+                <h4>You have a hard time remebering your past</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q4">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #6</h3>
+                <h4>KGB is one of the toughest spy agency in the world</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q5">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #7</h3>
+                <h4>You have a hard time trusting people you work with</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q6">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #8</h3>
+                <h4>Toys and new gadgets are fun to play with</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q7">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #9</h3>
+                <h4>You rather have a partner protect you with arrows than guns</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q8">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Survey Question -->
+            <div class="row col-lg-12">
+                <h3>Question #10</h3>
+                <h4>You have a big green friend</h4>
+                <div class="form-group col-xs-4">
+                    <select class="form-control" id="q9">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br>
+            </div>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content text-center">
+            <h3>Meet your new friend!</h3>
+            <br>
+            <h4 id="matchName"></h4>
+            <br>
+            <img id="matchPic" src="" alt="No Image" width=250px>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/assets/logic.js"></script>
+</body>
+
+</html>
