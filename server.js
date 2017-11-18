@@ -17,7 +17,9 @@ app.use('/assets', express.static(__dirname + '/assets'));
 
 //ROUTES
 require('./app/routing/api-routes.js')(app);
-require('./app/routing/html-routes.js')(app);
+const htmlRoute = require('./app/routing/html-routes.js')(app);
+
+app.use('/',htmlRoute)
 
 // Starts the server to begin listening
 app.listen(PORT, function () {
