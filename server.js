@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 
 var app = express();
-var PORT = 8080;
+var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app 
 app.use(bodyParser.json());
