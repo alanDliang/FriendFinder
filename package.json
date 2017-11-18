@@ -18,3 +18,7 @@
   },
   "homepage": "https://github.com/alanDliang/FriendFinder#readme"
 }
+"scripts": {
+       "start": "node server.js"
+     }
+   }
