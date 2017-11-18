@@ -17,8 +17,4 @@
     "url": "https://github.com/alanDliang/FriendFinder/issues"
   },
   "homepage": "https://github.com/alanDliang/FriendFinder#readme"
-},
-"scripts": {
-       "start": "node server.js"
-     }
-   }
+  }
